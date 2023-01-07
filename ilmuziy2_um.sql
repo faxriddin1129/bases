@@ -17417,38 +17417,6 @@ CREATE TABLE `lids_user` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `migration`
---
-
-CREATE TABLE `migration` (
-  `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
-
---
--- Дамп данных таблицы `migration`
---
-
-INSERT INTO `migration` (`version`, `apply_time`) VALUES
-('m000000_000000_base', 1626112760),
-('m130524_201442_init', 1626112763),
-('m190124_110200_add_verification_token_column_to_user_table', 1626112764),
-('m211226_170057_create_table_connect_quiz', 1640539113),
-('m220105_142702_connect_questions_and_type', 1641393011),
-('m220105_143424_connect_questions_and_type_id', 1641393310),
-('m220107_171840_connect_Themes_subject_id', 1641576018),
-('m220107_181924_drop', 1641579590),
-('m220107_182407_connect_questions_and_themes', 1641580007),
-('m220108_185629_connect_davomat', 1651579218),
-('m220503_115018_connect_branches_to_groups', 1651579220),
-('m220503_120135_connect_branches_to_all', 1651579693),
-('m220503_121047_connect_user_to_all', 1651580212),
-('m220528_052327_quiz_all', 1653716842),
-('m220528_054810_connect_quiz', 1653717551);
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `months_pay`
 --
 
@@ -20994,12 +20962,6 @@ ALTER TABLE `lids`
 --
 ALTER TABLE `lids_user`
   ADD PRIMARY KEY (`id`);
-
---
--- Индексы таблицы `migration`
---
-ALTER TABLE `migration`
-  ADD PRIMARY KEY (`version`);
 
 --
 -- Индексы таблицы `months_pay`
